@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+print("Welcome to the ZombieShroom quiz!")
+
+Zombie = input("Are you a zombie (Y or N)? ")
+if Zombie == "Y":
+    Shroom = input("Are you a mushroom (Y or N)? ")
+    if Shroom == "Y":
+        print("Congratulations, you are a Z0mb135hr00m")
+    elif Shroom == "N":
+        print("Sorry, you are not a Z0mb135hr00m")
+else:
+    print("Sorry, you are not a Z0mb135hr00m")
