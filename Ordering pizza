@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+
+print("Welcome to Robo's Pizza Plaza")
+
+bill = 0
+
+Size = input("What size of pizza do you want, Small(S), Medium(M) or Large(L)? ")
+
+if Size == "S":
+    bill = 15
+    Pepperoni = input("Do you want Pepperoni with that? (Y or N) ")
+    if Pepperoni == "Y":
+        bill += 2
+
+elif Size == "M":
+    bill = 20
+    Pepperoni = input("Do you want Pepperoni with that? (Y or N) ")
+    if Pepperoni == "Y":
+        bill += 3
+
+elif Size == "L":
+    bill = 25
+    Pepperoni = input("Do you want Pepperoni with that? (Y or N) ")
+    if Pepperoni == "Y":
+        bill += 3
+
+cheese = input("Would you like to add extra cheese? (Y or N) ")
+if cheese == "Y":
+    bill +=1
+
+print(f"Your total is ${bill}")
