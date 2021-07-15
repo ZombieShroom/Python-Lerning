@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+
+print("Welcome to the V0w3l Calculator")
+
+sentance = input("Enter your sentance here: ")
+
+lower_vowles = sentance.lower()
+
+a = lower_vowles.count("a")
+e = lower_vowles.count("e")
+i = lower_vowles.count("i")
+o = lower_vowles.count("o")
+u = lower_vowles.count("u")
+
+real_vowles = a + e + i + o + u
+
+print(f"Total number of vowles in sentance = {real_vowles}")
+print(f"A's = {a}, E's = {e}, I's = {i}, O's = {o}, U's = {u}")
+
+if real_vowles <= 15:
+    print("Thats not a lot of vowles.")
+elif real_vowles >= 16 and real_vowles <= 35:
+    print("Thats a goos amount of vowels.")
+else:
+    print("Thats a shit tonne of vowles")
