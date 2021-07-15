@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+
+Height = float(input("What is your Height in meters? "))
+
+Weight = int(input("What is your weight in kg? "))
+
+total = Weight / (Height * Height)
+
+print(total)
+
+if total < 18.5:
+    print("Under 18.5 they are underweight")
+elif total <= 25:
+    print("Over 18.5 but below 25 they have a normal weight")
+elif total < 35:
+    print("Over 30 but below 35 they are obese")
+else:
+    print("Above 35 they are clinically obese.")
+
+print("Thank you for playing")
