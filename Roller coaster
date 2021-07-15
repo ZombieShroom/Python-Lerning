@@ -1,0 +1,29 @@
+#!/usr/bin/env python
+
+print("Welcome to the rollercoaster")
+height = int(input("what is your height in cm? "))
+bill = 0
+
+if height >= 120:
+    print("You can ride the rollercoaster")
+    age = int(input("How old are you? "))
+    if age < 12:
+        bill = 5
+        print("$5 please")
+    elif age <= 18:
+        bill = 7
+        print("$7 please")
+    elif age >= 45 and age <= 55:
+        bill = 0
+        print("As you are SOOOOO old, you ride for free :)")
+    else:
+        bill = 10
+        print("$10 please")
+    photo = input("Do you want a photo (Y or N)? ")
+    if photo == "Y":
+        bill +=3
+    print(f"${bill}" + " Please")
+
+else:
+    print("to short for the rollercoaster")
+    exit()
